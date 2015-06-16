@@ -1,10 +1,38 @@
 ---
-title: Welcome to Middleman
+title: Dominic White
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+
+  <div class="slider fullscreen">
+    <div class="name-box">
+      <h1 id="my-name">Dominic White</h1>
+    </div>
+    <ul class="slides">
+      <li>
+        <%= image_tag 'gamer.jpg' %> <!-- gamer image -->
+        <div class="caption center-align">
+          <h3 >Experienced Gamer.</h3>
+        </div>
+      </li>
+      <li>
+        <%= image_tag 'code.jpg' %> <!-- grampians image -->
+        <div class="caption center-align">
+          <h3 >Progressing Developer.</h3>
+        </div>
+      </li>
+      <li>
+        <%= image_tag 'nature.jpg' %> <!-- nature image -->
+        <div class="caption center-align">
+          <h3 >Novice Survivalist.</h3>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <%= javascript_include_tag  "index" %>
+
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+  </script>

@@ -2,18 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Dominic White" %></title>
 
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "normalize", "materialize", "all" %>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lato:400,700|Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
+    <%= javascript_include_tag  "jquery-1.11.3.min", "materialize", "all" %>
   </head>
 
   <body class="<%= page_classes %>">
+  <div class="side-bar">
+      <nav id="nav-list">
+        <ul id="slide-out" class="side-nav">
+          <div id="photo-frame">
+            <%= image_tag 'domwhite1.png', :class => "my-photo" %>
+          </div>
+          <div class="social-media">
+            <a href="https://au.linkedin.com/in/dominicpaulwhite"><i id="linked-in" class="fa fa-linkedin-square fa-3x"></i></a>
+            <a href="https://github.com/DomWhite"><i id="github" class="fa fa-github-square fa-3x"></i></a>
+            <a href="https://twitter.com/DOM1N1CWH1TE"><i id="twitter" class="fa fa-twitter-square fa-3x"></i></a>
+          </div>
+          <li class="link-to"><i class="fa fa-home fa-2x"></i><a href="/">HOME</a></li>
+          <li class="link-to"><i class="fa fa-user fa-2x"></i><a href="/about.html">ABOUT</a></li>
+          <li class="link-to"><i class="fa fa-folder-open fa-2x"></i><a href="/projects.html">PROJECTS</a></li>
+          <li class="link-to"><i class="fa fa-paper-plane fa-2x"></i><a href="/contact.html">CONTACT</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+      </nav>
+    </div>
     <%= yield %>
+
+  <script>
+    $(".button-collapse").sideNav();
+  </script>
+
   </body>
 </html>

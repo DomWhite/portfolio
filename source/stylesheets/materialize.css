@@ -6770,7 +6770,7 @@ select {
       background-color: #ddd; }
   .side-nav a {
     color: #444;
-    display: block;
+    display: inline;
     font-size: 1rem;
     height: 64px;
     line-height: 64px;
@@ -7310,7 +7310,7 @@ select {
       transition: background-color .3s;
       border-radius: 50%; }
       .slider .indicators .indicator-item.active {
-        background-color: #4CAF50; }
+        background-color: #6cc0e5; }
 
 /* ==========================================================================
    $BASE-PICKER
