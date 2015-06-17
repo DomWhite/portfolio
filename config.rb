@@ -10,6 +10,7 @@
 ###
 # Page options, layouts, aliases and proxies
 ###
+page "/projects/*", :layout => "proj-temp"
 
 # Per-page layout changes:
 #
