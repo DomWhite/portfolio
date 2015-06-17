@@ -11,6 +11,11 @@
     font-family: 'Lato', Calibri, Trebuchet, sans-serif;
   }
 
+  body {
+    background: url(http://onlineweddingportfolio.com/images/background.jpg);
+    height: 100vh;
+  }
+
 /* Side Nav Bar */
 #nav-list {
   background-color: #273235;
@@ -22,6 +27,34 @@
   padding-left: 11px;
   margin-top: 1em;
   margin-left: 1em;
+}
+
+#slide-out {
+  background-color: #273235;
+  color: white;
+}
+
+.link-to {
+  text-align: center;
+}
+
+.link-to > a {
+  color: white;
+  font-size: 24px;
+}
+
+.my-photo {
+  max-height: 220px;
+  border-radius: 120px;
+}
+
+#photo-frame {
+  margin-left: 15px;
+  margin-top: 1em;
+}
+
+.social-media {
+  text-align: center;
 }
 
 /***** Hover effects *******/
@@ -47,25 +80,6 @@
 
 /**************************/
 
-#slide-out {
-  background-color: #273235;
-  color: white;
-}
-
-.link-to > a {
-  color: white;
-}
-
-.my-photo {
-  max-height: 220px;
-  border-radius: 120px;
-}
-
-#photo-frame {
-  margin-left: 15px;
-  margin-top: 1em;
-}
-
 
 /* INDEX PAGE */
 .name-box {
@@ -77,25 +91,34 @@
 #my-name {
   position: absolute;
   z-index: 1000;
-  color: #6cc0e5;
+  color: white;
   font-weight: bold;
   font-size: 80px;
   text-align: center;
   margin-top: 15vh;
-  /*font-family: skyfall;*/
+  text-shadow: 2px 2px #000000;
 }
 
 .caption {
   margin-top: 30vh;
 }
 
+.caption > h3 {
+  color: 6cc0e5;
+} 
+
 #linked-in, #github, #twitter {
   color: white;
 }
 
 
-
-
+/* PROJ TEMP */
+#back-btn {
+  background-color: #273235;
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+}
 
 /* MEDIA QUERIES */
 
