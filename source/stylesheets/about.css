@@ -1,28 +1,35 @@
 .about-banner {
-  width: 100%;
+/*  width: 100%;*/
   position: absolute;
   z-index: 500;
   top: 0;
   left: 0;
 }
 
-.about-page {
-  padding-top: 25%;
-/*  height: 100vh;
-  background-color: #272D2D;*/
-}
 
 .lum1 {
   color: white;
-  border: 2px solid red;
+  border-right: 1px solid grey;
 }
 
 .lum2 {
   color: white;
-  border: 2px solid green;
 }
 
 .lum3 {
   color: white;
-  border: 2px solid purple;
+  border-left: 1px solid grey;
+}
+
+.status {
+  color: #6cc0e5;
+}
+
+.avail {
+  color: white;
+}
+
+.status-heading {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
