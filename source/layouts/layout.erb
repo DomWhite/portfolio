@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href='//fonts.googleapis.com/css?family=Lato:400,700|Anonymous+Pro:400,700' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag "jquery-1.11.3.min", "materialize", "all" %>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64428708-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   </head>
 
   <body class="<%= page_classes %>">
@@ -29,9 +40,9 @@
             <a href="https://twitter.com/DOM1N1CWH1TE"><i id="twitter" class="fa fa-twitter-square fa-3x"></i></a>
           </div>
           <li class="link-to"><i class="fa fa-home fa-2x"></i><a href="/">HOME</a></li>
-          <li class="link-to"><i class="fa fa-user fa-2x"></i><a href="/about.html">ABOUT</a></li>
-          <li class="link-to"><i class="fa fa-folder-open fa-2x"></i><a href="/projects.html">PROJECTS</a></li>
-          <li class="link-to"><i class="fa fa-paper-plane fa-2x"></i><a href="/contact.html">CONTACT</a></li>
+          <li class="link-to"><i class="fa fa-user fa-2x"></i><a href="/about">ABOUT</a></li>
+          <li class="link-to"><i class="fa fa-folder-open fa-2x"></i><a href="/proj-slides">PROJECTS</a></li>
+          <li class="link-to"><i class="fa fa-paper-plane fa-2x"></i><a href="/contact">CONTACT</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse show-on-large tooltipped" data-position="right" data-delay="50" data-tooltip="CLICK TO OPEN">
           <i class="mdi-navigation-menu"></i>
